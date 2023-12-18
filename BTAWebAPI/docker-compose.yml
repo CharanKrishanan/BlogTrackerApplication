@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  appuilayer:
+    image: ${DOCKER_REGISTRY-}appuilayer
+    build:
+      context: .\..\BTAWebAPIClient
+      dockerfile: Dockerfile
